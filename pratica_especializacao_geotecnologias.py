@@ -20,3 +20,11 @@ print("My name is Jeanne")
 import numpy as np # pacote usado para cálculos
 import pandas as pd # pacote usado para ciência de dados
 import matplotlib.pyplot as plt # pacote usado para visualização de dados
+
+df = pd.read_csv("/content/sample_data/california_housing_test.csv")
+
+df.head() # apresenra as cinco primeiras linhas do data frame
+
+df.tail() # visualizar os últimos dados da tabela
+
+df.columns # visualizar nomes das colunas
