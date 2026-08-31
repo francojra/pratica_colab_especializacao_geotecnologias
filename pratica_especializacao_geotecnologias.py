@@ -46,4 +46,13 @@ df['median_income'].describe()
 print("Média da renda salarial da população:", np.mean(df['median_income']))
 
 histograma = plt.hist(df['median_income']) # função para elaborar um histograma dos dados da coluna
+plt.show(histograma) # mostra o gráfico na tela
+
+histograma = plt.hist(df['median_income'], bins = 30)
 plt.show(histograma)
+
+histograma = plt.hist(df['median_income'], bins = 100)
+plt.show(histograma)
+
+boxplot = plt.boxplot(df['median_income'])
+plt.show(boxplot)
