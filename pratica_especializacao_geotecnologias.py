@@ -28,3 +28,19 @@ df.head() # apresenra as cinco primeiras linhas do data frame
 df.tail() # visualizar os últimos dados da tabela
 
 df.columns # visualizar nomes das colunas
+
+df.head(10) # apresenta os 10 primeiros registros da tabela
+
+np.mean(df['median_income']) # calcula a média dos dados de uma coluna
+
+print(np.mean(df['median_income'])) # o print permite inserir apenas o resultado
+
+print(np.var(df["median_income"])) # calcula a variância
+
+print(np.std(df['median_income'])) # calcula o desvio padrão
+
+df.describe() # permite analisar todo o resumo estatístico da tabela de dados
+
+df['median_income'].describe()
+
+print("Média da renda salarial da população:", np.mean(df['median_income']))
