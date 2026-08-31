@@ -44,3 +44,6 @@ df.describe() # permite analisar todo o resumo estatístico da tabela de dados
 df['median_income'].describe()
 
 print("Média da renda salarial da população:", np.mean(df['median_income']))
+
+histograma = plt.hist(df['median_income']) # função para elaborar um histograma dos dados da coluna
+plt.show(histograma)
