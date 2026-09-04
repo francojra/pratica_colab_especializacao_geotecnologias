@@ -114,6 +114,50 @@ lista2
 for i in lista:
   print(i)
 
-for i in lista:
+for i in lista: # passa por todos os elementos, 'printa' e soma + 1 em cada valor
   print(i + 1)
 
+# Criar nova lista cujo resultado seja o somatório de +2 em cada valor presente na primeira lista
+
+## Primeira forma:
+
+lista_soma = []
+
+for i in lista:
+  lista_soma.append(i  + 2)
+
+print(lista_soma)
+
+# Comprimento de listas e alcances
+len(lista)
+
+range(len(lista))
+
+## Segunda forma:
+
+lista_soma_2 = []
+
+for i in range(len(lista)):
+  lista_soma_2.append(lista[i] + 4) # a função vai modificar o valor em cada posição da lista, por isso, lista[i]
+
+print(lista_soma_2)
+
+## Função insert:
+
+lista_satelites = ['modis', 'landsat', 'amazonia']
+
+lista_satelites.insert(3, 'sentinel') # inserir 'sentinel' na posição 3
+
+print(lista_satelites)
+
+# Loop com while
+
+lista_com_while = []
+
+contador = 0
+
+while contador < len(lista): # enquanto o contador apresentar um valor menor do que o comprimento da lista (100), ele adiciona +1 a cada valor da lista
+  lista_com_while.append(lista[contador] + 1)
+  contador += 1 # como foi definido que o contador começa na posição zero, após a soma, ele vai para a posição 1, e assim por diante até somar todos os valores da lista
+
+print(lista_com_while)
