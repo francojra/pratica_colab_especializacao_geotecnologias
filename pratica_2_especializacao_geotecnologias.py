@@ -66,3 +66,54 @@ T
 type(T)
 
 T[2]
+
+# Estrutura de condição
+x = -45
+y = -15
+
+if (x > 0) and (y > 0): # após dois pontos e enter ocorre a identação necessária para correr o código
+  print('Hemisfério norte')
+else:
+  print('Hemisfério sul')
+
+x = -45
+y = -15
+
+if (x > 0) and (y > 0):
+  print('Hemisfério norte')
+elif (x == 0) and (y==0): # condição adicional intermediária
+  print('Origem')
+else:
+  print('Hemisfério sul')
+
+x = 0
+y = 0
+
+if (x > 0) and (y > 0):
+  print('Hemisfério norte')
+elif (x == 0) and (y==0): # condição adicional intermediária
+  print('Origem')
+else:
+  print('Hemisfério sul')
+
+"""Estruturas de repetição
+
+"""
+
+# Bibliotecas
+import numpy as np
+
+# Criando uma lista com a biblioteca numpy
+lista = list(np.random.rand(100)) # cria 100 números aleatórios variando de 0 a 1
+lista
+
+lista2 = list(np.random.randint(1, 100, 100)) # gera 100 números inteiros variando de 1 a 100
+lista2
+
+# Loop do tipo for
+for i in lista:
+  print(i)
+
+for i in lista:
+  print(i + 1)
+
