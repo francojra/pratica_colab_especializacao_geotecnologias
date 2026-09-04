@@ -161,3 +161,16 @@ while contador < len(lista): # enquanto o contador apresentar um valor menor do 
   contador += 1 # como foi definido que o contador começa na posição zero, após a soma, ele vai para a posição 1, e assim por diante até somar todos os valores da lista
 
 print(lista_com_while)
+
+"""Numpy array (listas e tuplas com a biblioteca numpy)"""
+
+# Criando uma lista com numpy
+np.array([1, 2, 3, 4, 5])
+
+lista_array = np.array(['a', 'b', 'c', 'd'])
+print(lista_array)
+
+# Criando uma matriz
+
+matriz = np.array([[5, 7, 3, 5], [9, 3, 4, 1]]) # necessário um colchete a mais global
+print(matriz)
