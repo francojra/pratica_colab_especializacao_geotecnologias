@@ -174,3 +174,28 @@ print(lista_array)
 
 matriz = np.array([[5, 7, 3, 5], [9, 3, 4, 1]]) # necessário um colchete a mais global
 print(matriz)
+
+# Acessando elementos da matriz
+matriz[0]
+
+matriz[1]
+
+# Acessando elementos únicos de uma matriz
+matriz[1][0] # acessa o primeiro elemento da linha na posição 1
+
+matriz[0][3] # acessa o último elemento da linha na posição 0
+
+# Loop for com array 2D
+
+for i in matriz:
+  print(i +2)
+
+# Usar o loop para acessar os números individuais da matriz
+
+for i in matriz:
+  for j in i: # como já foi usado o 'i', colocamos outra letra
+    print(j)
+
+for i in matriz:
+  for j in i:
+    print(j +5) # soma 5 a cada elemento individual da matriz
