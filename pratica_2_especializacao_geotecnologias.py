@@ -39,3 +39,30 @@ str(x) + z
 str(y) + w
 
 x + z  # Não podemos fazer operações entre números e string
+
+# Estruturas de dados
+d = {'nome': 'Jeanne', 'idade': 36, 'estado': 'RN'}
+
+type(d)
+
+d.keys()
+
+d['nome']
+
+d['estado']
+
+L = [1,2,3,4,5]
+type(L)
+
+L[2] # retorna o valor localizado na terceira posição, pois no python inicia-se em 0
+
+L[-1] # retorna o último elemento
+
+L[-2] # retorna o penúltimo elemento
+
+T = (520, 'coordenadas geográficas', 20, 84999781275) # a tuppla se diferencia da lista por não ser dinâmico, ou seja, os dados não são alterados, na lista pode ser modificado, por exemplo, lista de compras, lista de tarefas, etc
+T
+
+type(T)
+
+T[2]
