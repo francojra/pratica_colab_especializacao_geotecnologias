@@ -217,5 +217,8 @@ img.shape # mostra os exiso x, y e z
 
 type(img) # mostra que é uma array de n dimensões
 
-# Visualizar imagem
+# Visualizar imagem com spectral
 spectral.imshow(img)
+
+spectral.imshow(img, (2, 1, 0), stretch = (0.02, 0.98)) # as bandas da cor real são as 3, 2 e 1 que usa o padrão de tupla. stretch é o contraste da imagem
+
