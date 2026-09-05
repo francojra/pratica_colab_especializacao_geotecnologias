@@ -199,3 +199,23 @@ for i in matriz:
 for i in matriz:
   for j in i:
     print(j +5) # soma 5 a cada elemento individual da matriz
+
+"""Lendo e visualizando raster"""
+
+! pip install spectral
+
+
+
+# Bibliotecas
+import tifffile as tiff
+import spectral
+import matplotlib.pyplot as plt
+
+# Lendo imagem
+img = tiff.imread('/content/Mosaico_Sentinel2_TBDC_037012_20250930_081104_contraste.tif')
+img.shape # mostra os exiso x, y e z
+
+type(img) # mostra que é uma array de n dimensões
+
+# Visualizar imagem
+spectral.imshow(img)
